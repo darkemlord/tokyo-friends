@@ -3,7 +3,7 @@ import Phaser from 'phaser';
 
 export default class Hero extends Phaser.Physics.Arcade.Sprite {
   constructor(scene, x, y) {
-    super(scene, x, y, 'Emanuel');
+    super(scene, x, y, 'Hero');
 
     scene.add.existing(this);
     scene.physics.add.existing(this);
@@ -20,7 +20,7 @@ export default class Hero extends Phaser.Physics.Arcade.Sprite {
   createAnimations(scene) {
     scene.anims.create({
       key: 'walk-up',
-      frames: scene.anims.generateFrameNumbers('Emanuel', {
+      frames: scene.anims.generateFrameNumbers('Hero', {
         start: 105,
         end: 112,
       }),
@@ -30,7 +30,7 @@ export default class Hero extends Phaser.Physics.Arcade.Sprite {
 
     scene.anims.create({
       key: 'walk-left',
-      frames: scene.anims.generateFrameNumbers('Emanuel', {
+      frames: scene.anims.generateFrameNumbers('Hero', {
         start: 117,
         end: 124,
       }),
@@ -40,7 +40,7 @@ export default class Hero extends Phaser.Physics.Arcade.Sprite {
 
     scene.anims.create({
       key: 'walk-down',
-      frames: scene.anims.generateFrameNumbers('Emanuel', {
+      frames: scene.anims.generateFrameNumbers('Hero', {
         start: 130,
         end: 138,
       }),
@@ -50,7 +50,7 @@ export default class Hero extends Phaser.Physics.Arcade.Sprite {
 
     scene.anims.create({
       key: 'walk-right',
-      frames: scene.anims.generateFrameNumbers('Emanuel', {
+      frames: scene.anims.generateFrameNumbers('Hero', {
         start: 143,
         end: 151,
       }),

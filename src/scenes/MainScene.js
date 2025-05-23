@@ -7,7 +7,7 @@ export default class MainScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.spritesheet('Emanuel', EmanuelImage, {
+    this.load.spritesheet('Hero', EmanuelImage, {
       frameWidth: 64,
       frameHeight: 64,
     });
