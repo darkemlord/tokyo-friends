@@ -1,17 +1,23 @@
+import Hero from '../objects/Characters/Hero.js';
+import EmanuelImage from '../assets/images/characters/emanuel.png';
+
 export default class MainScene extends Phaser.Scene {
   constructor() {
     super({ key: 'MainScene' });
   }
 
   preload() {
-    // Assets will be loaded here
+    this.load.spritesheet('Emanuel', EmanuelImage, {
+      frameWidth: 64,
+      frameHeight: 64,
+    });
   }
 
   create() {
-    // Game objects will be created here
+    this.hero = new Hero(this, 100, 100);
   }
 
   update() {
-    // Game logic will be updated here
+    this.hero.update();
   }
 }
